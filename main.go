@@ -62,6 +62,10 @@ func NewVarArray(v ...*Var) *Var {
 	return VarOfArr(v)
 }
 
+func NewVarMap() *Var {
+	return VarOfMap(make(map[string]*Var, 32))
+}
+
 // =============================
 // Methods (GETTERS)
 // =============================
