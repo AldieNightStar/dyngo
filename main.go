@@ -66,6 +66,10 @@ func NewVarMap() *Var {
 	return VarOfMap(make(map[string]*Var, 32))
 }
 
+func NewVarFunc(f VarFunc) *Var {
+	return &Var{Type: TYPE_FUNC, Func: f}
+}
+
 // =============================
 // Methods (GETTERS)
 // =============================
